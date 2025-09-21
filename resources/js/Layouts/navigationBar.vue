@@ -59,7 +59,7 @@
     <slot></slot>
     <Transition appear enter-active-class="transition ease-out duration-300"
                       leave-active-class="transition ease-out duration-500" enter-from-class="opacity-0" leave-to-class="opacity-0">
-        <div class="fixed w-full h-[80px] bg-[#0C1E2F] bottom-0 rounded-t-[20px]" v-show="navBarOpen" @mouseleave="startTimeout()"  @mouseover="startHover()" @mousemove="startHover()">
+        <div class="font-[Poppins] fixed w-full h-[80px] bg-[#0C1E2F] bottom-0 rounded-t-[20px]" v-show="navBarOpen" @mouseleave="startTimeout()"  @mouseover="startHover()" @mousemove="startHover()">
             <div class="flex h-[100%] pl-[5%]">
                 <div class="basis-[25%] flex justify-center items-center h-[100%]" >
                     <Link :href="route('home')" preserve-scroll class="flex justify-center items-center font-Nats text-[16px] h-[51px] w-[95%] rounded-[15px]" :class="{' bg-textRed ': $page.component === 'latest' || $page.component === 'trending'}">

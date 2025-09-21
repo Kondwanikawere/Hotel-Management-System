@@ -14,9 +14,14 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 PetitFormalScript : 'Petit Formal Script',
-                Nats : 'nats'
+                Nats : 'nats',
+                Poppins : 'Poppins'
             },
             colors: {
+                'navBar' : '#0D1B2A',
+                'hoverSubmenu': '#343A40',
+                'hoverMenu' : '#37a000',
+                'sideBar' : '#212529',
                 'background': '#001120',
                 'textRed' : '#B90020',
                 transparentColor :'rgb (161,161,161,50%)',

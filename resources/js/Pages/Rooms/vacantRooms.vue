@@ -80,7 +80,7 @@ onMounted(() => {
     </Head>
     <dashboardHeader :content="content">
         <template #main>
-            <div class="h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
+            <div class="h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground font-[Poppins]">
                 <p class="text-[18px] pb-[10px]">Vacant rooms</p>
                 <div class="w-full flex flex-col items-center pt-[15px]">
                     <div class="w-[80%] pt-[5px]">
@@ -90,7 +90,7 @@ onMounted(() => {
                             <Menu as="div">
                                 <div>
                                     <MenuButton class="inline-flex w-full justify-center">
-                                        <img src="/public/images/filter.svg" alt="filter" class="w-[30px] h-[30px]">
+                                        <img src="/public/images/Filter.png" alt="filter" class="w-[30px] h-[30px]">
                                     </MenuButton>
                                 </div>
                                 <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
@@ -140,7 +140,7 @@ onMounted(() => {
                                     <td class="flex items-center justify-center w-[25%]">{{ room.id }}</td>
                                     <td class="flex items-center justify-center w-[25%]">{{ getRoomType(room.type) }}</td>
                                     <td class="flex items-center justify-center w-[25%]" >
-                                        <div class="flex justify-center w-[35%] h-[80%] text-white items-center rounded-[5px] text-[13px]" :class="{'bg-[#B00101]' : room.status === 0, 'bg-[#02703B]' : room.status === 1}">{{ getRoomStatus(room.status) }}</div>
+                                        <div class="flex justify-center w-[35%] h-[85%] text-white items-center rounded-[5px] text-[13px]" :class="{'bg-[#02703B]' : room.status === 0, 'bg-[#B00101]' : room.status === 1}">{{ getRoomStatus(room.status) }}</div>
                                     </td>
                                     <td class="flex items-center justify-center w-[25%] text-[12px]">
                                         <div v-if="room.latest_customer_visit !== null">

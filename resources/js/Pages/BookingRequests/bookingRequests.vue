@@ -25,7 +25,7 @@ const getDate = (date) =>
     </Head>
     <dashboardHeader :content="content">
         <template #main>
-            <div class="h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
+            <div class="font-[Poppins] h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
                 <p class="text-[18px] pb-[10px]">Booking Requests</p>
                 <div class="w-full flex flex-col items-center pt-[15px]">
                     <div class="w-[80%] pt-[5px]">

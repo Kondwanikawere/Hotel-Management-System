@@ -77,7 +77,7 @@ onMounted(() => {
     <div class="flex justify-center">
       <button
         @click="toggleDropdown"
-        class="flex space-x-[8%] items-center pl-[10%] text-black text-[14px] bg-hBackground w-[90%] h-[40px] rounded-[10px]"
+        class="flex space-x-[8%] items-center pl-[5%] text-white text-[14px]  w-[90%] h-[40px] rounded-[5px] hover:bg-hoverMenu" :class="[{'bg-hoverMenu': isOpen}]"
       >
         <img :src="`/images/${img}`" :alt="img" :class="`w-[${imageWidth}px] h-[${imageHeight}px]`">
         <p v-if="buttonName !== null">{{ buttonName }}</p>
@@ -96,14 +96,14 @@ onMounted(() => {
       leave-from-class="transform opacity-100 scale-100"
       leave-to-class="transform opacity-0 scale-95"
     >
-      <div v-if="isOpen && (link1 !== null && link2 !== null)" class="flex flex-col divide-y-2 text-[13px] border-2 border-hBackground w-[80%] ml-[15%] mt-[5px] rounded-[5px] text-black bg-white">
-        <Link :href="route(routeName1)" v-if="link1 !== null" :class="{'bg-[#A2A2A2]' : content === routeName1}" class="pl-[7%] h-[35px] flex items-center justify-center]" tabindex="0">
+      <div v-if="isOpen && (link1 !== null && link2 !== null)" class="bg-sideBar flex flex-col text-[13px] w-[94%] pl-[25%] mt-[5px] rounded-[5px] text-white ">
+        <Link :href="route(routeName1)" v-if="link1 !== null" :class="{'!bg-hoverSubmenu' : content === routeName1}" class="hover:bg-hoverSubmenu bg-sideBar w-[100%] pl-[7%] h-[35px] flex items-center justify-center]" tabindex="0">
             {{ link1 }}
         </Link>
-        <Link :href="route(routeName2)" v-if="link2 !== null" :class="{'bg-[#A2A2A2]' : content === routeName2}" class="pl-[7%] h-[35px] flex items-center justify-center]" tabindex="0">
+        <Link :href="route(routeName2)" v-if="link2 !== null" :class="{'!bg-hoverSubmenu' : content === routeName2}" class="hover:bg-hoverSubmenu bg-sideBar pl-[7%] h-[35px] flex items-center justify-center]" tabindex="0">
             {{ link2 }}
         </Link>
-        <Link :href="route(routeName3)" v-if="link3 !== null"  :class="{'bg-[#A2A2A2]' : content === routeName3}" class="pl-[7%] h-[35px] flex items-center justify-center]" tabindex="0">
+        <Link :href="route(routeName3)" v-if="link3 !== null"  :class="{'!bg-hoverSubmenu' : content === routeName3}" class="hover:bg-hoverSubmenu bg-sideBar pl-[7%] h-[35px] flex items-center justify-center]" tabindex="0">
             {{ link3 }}
         </Link>
       </div>

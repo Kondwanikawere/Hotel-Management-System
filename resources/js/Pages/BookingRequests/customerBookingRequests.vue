@@ -78,7 +78,7 @@ const config = {
     </Head>
     <dashboardHeader :content="content">
         <template #main>
-            <div class="h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
+            <div class="font-[Poppins] h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
                 <div class="w-full flex items-center pl-[40%] space-x-[68%] pb-[px]">
                     <p class="text-[18px] justify-self-center">Room booking</p>
                 </div>

@@ -8,7 +8,12 @@ const rooms = '/rooms'
         <title> | Welcome</title>
         <meta head-key="Welcome" name="Welcome" content="Welcome"/>
     </Head>
-    <div class="w-full flex flex-col h-[820px] items-center mt-[60px]">
+    <div class="flex justify-end h-[50px] bg-[#2E2A50] items-center space-x-[30px] pr-[30px] font-[Poppins]">
+        <Link class="">ABOUT US</Link>
+        <Link :href="route('login')"  class="">LOGIN</Link>
+        <Link :href="route('register')" class="">SIGN UP</Link>
+    </div>
+    <div class="w-full flex flex-col h-[820px] items-center mt-[60px] font-[Poppins]">
             <img src="/public/images/Hotel Logo.png" alt="logo" class="w-[140px] h-[140px] rounded-full object-cover">
             <p class="pt-[37px] text-[24px]">Welcome To The Grand Opulence Hotel</p>
             <p class="pt-[5px] text-[16px]">Experience the perfect blend of Luxury and Comfort</p>

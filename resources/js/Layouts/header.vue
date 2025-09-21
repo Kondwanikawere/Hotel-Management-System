@@ -21,7 +21,7 @@
      <Head>
         <meta head-key="description" name="description" content="Stream and download music"/>
     </Head>
-    <div class="relative" >
+    <div class="font-[Poppins] relative" >
         <div class="fixed flex flex-col gap-y-4 w-full bg-background z-30">
             <div class="mt-[33px] relative mb-10 w-full">
                 <div class="absolute z-20">

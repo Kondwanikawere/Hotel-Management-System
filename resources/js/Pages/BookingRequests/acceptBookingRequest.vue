@@ -94,7 +94,7 @@ onMounted(() => {
     </Head>
     <dashboardHeader :content="content">
         <template #main>
-            <div class="h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
+            <div class="font-[Poppins] h-[650px] flex flex-col items-center w-full bg-white text-black pt-[15px] divide-y-2 border-hBackground">
                 <div class="w-full flex items-center pl-[40%] space-x-[68%] pb-[10px]">
                     <p class="text-[18px] justify-self-center">Customer details'</p>
                     <Link class="bg-[#02703B] w-[70px] flex justify-center items-center h-[30px] rounded-[5px] text-white">Edit</Link>
